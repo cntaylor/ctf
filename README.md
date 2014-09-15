@@ -2,31 +2,31 @@
 
 A module containing many continuous testing functions for optimisation. Many are taken from http://www.sfu.ca/~ssurjano/optimization.html.
 
-Each test function is implemented as a class with up to three methods for calculating the cost, gradient and Hessian information of the test functions.
+Each test function is implemented as a class with up to three methods for calculating the *cost*, *gradient* and *Hessian* information of the test functions.
 
 Intended for testing the performance of mathematical optimisation routines.
 
 
 ### 1D Function Summary
 
-#### Many Local Minima
+**Many Local Minima**
 
   1. Gramacy and Lee Function
 
 
-#### Bowl Shaped
+**Bowl Shaped**
 
   1. Quadratic
   
 
-#### Other
+**Other**
 
   1. Forrester Function
 
 
 ### 2D Function Summary
 
-#### Many Local Minima
+**Many Local Minima**
 
   1. Ackley Function
   1. Bukin Function No. 6
@@ -45,7 +45,7 @@ Intended for testing the performance of mathematical optimisation routines.
   1. Shubert Function
 
 
-#### Bowl Shaped
+**Bowl Shaped**
 
   1. Bohachevsky Functions
   1. Perm Function 0, d, β
@@ -56,7 +56,7 @@ Intended for testing the performance of mathematical optimisation routines.
   1. Trid Function
 
 
-#### Plate-Shaped
+**Plate-Shaped**
 
   1. Booth Function
   1. Matyas Function
@@ -65,7 +65,7 @@ Intended for testing the performance of mathematical optimisation routines.
   1. Zakharov Function
 
 
-#### Valley-Shaped
+**Valley-Shaped**
 
   1. Three-Hump Camel Function
   1. Six-Hump Camel Function
@@ -73,14 +73,14 @@ Intended for testing the performance of mathematical optimisation routines.
   1. Rosenbrock Function
 
 
-#### Steep Ridges/Drops
+**Steep Ridges/Drops**
 
   1. De Jong Function N. 5
   1. Easom Function
   1. Michalewicz Function
 
 
-#### Other
+**Other**
 
   1. Beale Function
   1. Branin Function
@@ -92,7 +92,7 @@ Intended for testing the performance of mathematical optimisation routines.
 
 ### ND Function Summary
 
-#### Many Local Minima
+**Many Local Minima**
 
   1. Ackley Function
   1. Griewank Function
@@ -102,7 +102,7 @@ Intended for testing the performance of mathematical optimisation routines.
   1. Schwefel Function
 
 
-#### Bowl Shaped
+**Bowl Shaped**
 
   1. Perm Function 0, d, β
   1. Rotated Hyper-Ellipsoid Function
@@ -112,24 +112,24 @@ Intended for testing the performance of mathematical optimisation routines.
   1. Trid Function
 
 
-#### Plate-Shaped
+**Plate-Shaped**
 
   1. Power Sum Function
   1. Zakharov Function
 
 
-#### Valley-Shaped
+**Valley-Shaped**
 
   1. Dixon-Price Function
   1. Rosenbrock Function
 
 
-#### Steep Ridges/Drops
+**Steep Ridges/Drops**
 
   1. Michalewicz Function
 
 
-#### Other
+**Other**
 
   1. Perm Function d, β
   1. Powell Function
