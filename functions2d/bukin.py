@@ -22,8 +22,8 @@ class Bukin(Function2D):
     def cost(self, x):
         """ Cost function. """
         # Cost
-        cost = np.zeros(1)
+        c = np.zeros(x.shape[1:])
         # Calculate Cost
-        cost[0] = 100.0*np.sqrt(np.abs(x[1] - 0.01*x[0]**2)) + 0.01*np.abs(x[0] + 10.0)
+        c = 100.0*np.sqrt(np.abs(x[1] - 0.01*x[0]**2)) + 0.01*np.abs(x[0] + 10.0)
         # Return Cost
-        return cost
+        return c

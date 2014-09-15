@@ -35,8 +35,6 @@ Requires Python 3 and depends on Numpy and MatPlotLib.
   1. Eggholder Function
   1. Griewank Function
   1. Holder Table Function
-  1. Langermann Function
-  1. Levy Function
   1. Levy Function No. 13
   1. Rastrigin Function
   1. Schaffer Function No. 2

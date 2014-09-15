@@ -25,8 +25,8 @@ class HolderTable(Function2D):
     def cost(self, x):
         """ Cost function. """
         # Cost
-        cost = np.zeros(1)
+        c = np.zeros(x.shape[1:])
         # Calculate Cost
-        cost[0] = -np.abs(np.sin(x[0])*np.cos(x[1])*np.exp(np.abs(1 - np.sqrt(x[0]**2 + x[1]**2)/np.pi)))
+        c = -np.abs(np.sin(x[0])*np.cos(x[1])*np.exp(np.abs(1 - np.sqrt(x[0]**2 + x[1]**2)/np.pi)))
         # Return Cost
-        return cost
+        return c

@@ -5,26 +5,26 @@ from functions2d.function2d import Function2D
 
 
 # Problem
-class Griewank(Function2D):
-    """ Griewank Function. """
+class Schwefel(Function2D):
+    """ Schwefel Function. """
 
     def __init__(self):
         """ Constructor. """
-        self.min = np.array([0.0, 0.0])
+        self.min = np.array([420.9687, 420.9687])
         self.value = 0.0
-        self.domain = np.array([[-600.0, 600.0], [-600.0, 600.0]])
+        self.domain = np.array([[-500, 500], [-500, 500]])
         self.smooth = True
         self.info = [True, False, False]
-        self.latex_name = "Griewank Function"
+        self.latex_name = "Schwefel Function"
         self.latex_type = "Many Local Minima"
-        self.latex_cost = r'\[ f(x,y) = ... \]'
-        self.latex_desc = "The Griewank function has many widespread local minima, which are regularly distributed."
+        self.latex_cost = "\[ f(x,y) = ... \]"
+        self.latex_desc = "The Schwefel function is complex, with many local minima."
 
     def cost(self, x):
         """ Cost function. """
         # Cost
         c = np.zeros(x.shape[1:])
         # Calculate Cost
-        c = (x[0]**2 + x[1]**2)/4000 - np.cos(x[0])*np.cos(x[1]/2) + 1
+        c = 418.9829*2 - x[0]*np.sin(np.sqrt(np.abs(x[0]))) - x[1]*np.sin(np.sqrt(np.abs(x[1])))
         # Return Cost
         return c

@@ -23,8 +23,8 @@ class Eggholder(Function2D):
     def cost(self, x):
         """ Cost function. """
         # Cost
-        cost = np.zeros(1)
+        c = np.zeros(x.shape[1:])
         # Calculate Cost
-        cost[0] = -x[0]*sin(sqrt(abs(x[0] - x[1] - 47))) + (-x[1] - 47)*sin(sqrt(abs(x[0]/2 + x[1] + 47)))
+        c = -x[0]*sin(sqrt(abs(x[0] - x[1] - 47))) + (-x[1] - 47)*sin(sqrt(abs(x[0]/2 + x[1] + 47)))
         # Return Cost
-        return cost
+        return c
