@@ -1,10 +1,10 @@
 ## Continuous Testing Functions (ctf) for Optimisation
 
-A module containing many continuous testing functions for optimisation. Many are taken from http://www.sfu.ca/~ssurjano/optimization.html.
+A module containing continuous testing functions for optimisation. Intended for testing the performance of mathematical optimisation routines. Many are taken from http://www.sfu.ca/~ssurjano/optimization.html.
 
 Each test function is implemented as a class with up to three methods for calculating the *cost*, *gradient* and *Hessian* information of the test functions.
 
-Intended for testing the performance of mathematical optimisation routines.
+Requires Python 3 and depends on Numpy and MatPlotLib.
 
 
 ### 1D Function Summary
