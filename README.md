@@ -11,21 +11,17 @@ Intended for testing the performance of mathematical optimisation routines.
 
 #### Many Local Minima
 
+  1. Gramacy and Lee Function
+
 
 #### Bowl Shaped
 
-
-#### Plate-Shaped
-
-
-#### Valley-Shaped
-
-
-#### Steep Ridges/Drops
-
+  1. Quadratic
+  
 
 #### Other
 
+  1. Forrester Function
 
 
 ### 2D Function Summary
@@ -37,7 +33,6 @@ Intended for testing the performance of mathematical optimisation routines.
   1. Cross-in-Tray Function
   1. Drop-Wave Function
   1. Eggholder Function
-  1. Gramacy and Lee Function
   1. Griewank Function
   1. Holder Table Function
   1. Langermann Function
@@ -49,6 +44,7 @@ Intended for testing the performance of mathematical optimisation routines.
   1. Schwefel Function
   1. Shubert Function
 
+
 #### Bowl Shaped
 
   1. Bohachevsky Functions
@@ -59,6 +55,7 @@ Intended for testing the performance of mathematical optimisation routines.
   1. Sum Squares Function
   1. Trid Function
 
+
 #### Plate-Shaped
 
   1. Booth Function
@@ -67,6 +64,7 @@ Intended for testing the performance of mathematical optimisation routines.
   1. Power Sum Function
   1. Zakharov Function
 
+
 #### Valley-Shaped
 
   1. Three-Hump Camel Function
@@ -74,50 +72,68 @@ Intended for testing the performance of mathematical optimisation routines.
   1. Dixon-Price Function
   1. Rosenbrock Function
 
+
 #### Steep Ridges/Drops
 
   1. De Jong Function N. 5
   1. Easom Function
   1. Michalewicz Function
 
+
 #### Other
 
   1. Beale Function
   1. Branin Function
-  1. Colville Function
-  1. Forrester et al. (2008) Function
   1. Goldstein-Price Function
-  1. Hartmann 3-D Function
-  1. Hartmann 4-D Function
-  1. Hartmann 6-D Function
   1. Perm Function d, β
   1. Powell Function
-  1. Shekel Function
   1. Styblinski-Tang Function
+
 
 ### ND Function Summary
 
 #### Many Local Minima
 
+  1. Ackley Function
+  1. Griewank Function
+  1. Langermann Function
+  1. Levy Function
+  1. Rastrigin Function
+  1. Schwefel Function
 
 
 #### Bowl Shaped
 
+  1. Perm Function 0, d, β
+  1. Rotated Hyper-Ellipsoid Function
+  1. Sphere Function
+  1. Sum of Different Powers Function
+  1. Sum Squares Function
+  1. Trid Function
 
 
 #### Plate-Shaped
 
+  1. Power Sum Function
+  1. Zakharov Function
 
 
 #### Valley-Shaped
 
+  1. Dixon-Price Function
+  1. Rosenbrock Function
 
 
 #### Steep Ridges/Drops
 
+  1. Michalewicz Function
 
 
 #### Other
+
+  1. Perm Function d, β
+  1. Powell Function
+  1. Styblinski-Tang Function
 
 
 
