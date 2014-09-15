@@ -1,4 +1,4 @@
-## Continuous Testing Functions (ctf) for Optimisation
+## Continuous Testing Functions for Optimisation
 
 A module containing continuous testing functions for optimisation. Intended for testing the performance of mathematical optimisation routines. Many are taken from http://www.sfu.ca/~ssurjano/optimization.html.
 
