@@ -25,13 +25,17 @@ class Ackley(Function2D):
 
     def cost(self, x):
         """ Cost function. """
+        # Cost
+        c = np.zeros(x.shape[1:])
         # Calculate Cost
-        cost = -20.0*exp(-0.2*sqrt(0.5*(x[0]**2 + x[1]**2))) - exp(0.5*(cos(2.0*pi*x[0]) + cos(2.0*pi*x[1]))) + 20.0 + exp(1.0)
+        c = -20.0*exp(-0.2*sqrt(0.5*(x[0]**2 + x[1]**2))) - exp(0.5*(cos(2.0*pi*x[0]) + cos(2.0*pi*x[1]))) + 20.0 + exp(1.0)
         # Return Cost
-        return cost
+        return c
 
     def grad(self, x):
         """ Grad function. """
+        # Cost
+        g = np.zeros(x.shape)
         # Calculate Grads
         dx = 2.0*x[0]*exp(-0.2*sqrt(0.5*x[0]**2 + 0.5*x[1]**2))/sqrt(0.5*x[0]**2 + 0.5*x[1]**2) + 1.0*pi*exp(0.5*cos(2.0*pi*x[0]) + 0.5*cos(2.0*pi*x[1]))*sin(2.0*pi*x[0])
         dy = 2.0*x[1]*exp(-0.2*sqrt(0.5*x[0]**2 + 0.5*x[1]**2))/sqrt(0.5*x[0]**2 + 0.5*x[1]**2) + 1.0*pi*exp(0.5*cos(2.0*pi*x[0]) + 0.5*cos(2.0*pi*x[1]))*sin(2.0*pi*x[1])
@@ -40,12 +44,12 @@ class Ackley(Function2D):
 
     def hess(self, x):
         """ Hess function. """
-        # Hess
-        hess = np.zeros((2, 2))
+        # Cost
+        h = np.zeros((2, 2) + x.shape[1:])
         # Hesses
-        hess[0][0] = -0.2*x[0]**2*exp(-0.2*sqrt(0.5*x[0]**2 + 0.5*x[1]**2))/(0.5*x[0]**2 + 0.5*x[1]**2) - 1.0*x[0]**2*exp(-0.2*sqrt(0.5*x[0]**2 + 0.5*x[1]**2))/(0.5*x[0]**2 + 0.5*x[1]**2)**(3/2) - 1.0*np.pi**2*exp(0.5*cos(2.0*np.pi*x[0]) + 0.5*cos(2.0*np.pi*x[1]))*sin(2.0*np.pi*x[0])**2 + 2.0*np.pi**2*exp(0.5*cos(2.0*np.pi*x[0]) + 0.5*cos(2.0*np.pi*x[1]))*cos(2.0*np.pi*x[0]) + 2.0*exp(-0.2*sqrt(0.5*x[0]**2 + 0.5*x[1]**2))/sqrt(0.5*x[0]**2 + 0.5*x[1]**2)
-        hess[0][1] = -0.2*x[0]*x[1]*exp(-0.2*sqrt(0.5*x[0]**2 + 0.5*x[1]**2))/(0.5*x[0]**2 + 0.5*x[1]**2) - 1.0*x[0]*x[1]*exp(-0.2*sqrt(0.5*x[0]**2 + 0.5*x[1]**2))/(0.5*x[0]**2 + 0.5*x[1]**2)**(3/2) - 1.0*np.pi**2*exp(0.5*cos(2.0*np.pi*x[0]) + 0.5*cos(2.0*np.pi*x[1]))*sin(2.0*np.pi*x[0])*sin(2.0*np.pi*x[1])
-        hess[0][1] = hess[1][0]
-        hess[1][1] = -0.2*x[1]**2*exp(-0.2*sqrt(0.5*x[0]**2 + 0.5*x[1]**2))/(0.5*x[0]**2 + 0.5*x[1]**2) - 1.0*x[1]**2*exp(-0.2*sqrt(0.5*x[0]**2 + 0.5*x[1]**2))/(0.5*x[0]**2 + 0.5*x[1]**2)**(3/2) - 1.0*np.pi**2*exp(0.5*cos(2.0*np.pi*x[0]) + 0.5*cos(2.0*np.pi*x[1]))*sin(2.0*np.pi*x[1])**2 + 2.0*np.pi**2*exp(0.5*cos(2.0*np.pi*x[0]) + 0.5*cos(2.0*np.pi*x[1]))*cos(2.0*np.pi*x[1]) + 2.0*exp(-0.2*sqrt(0.5*x[0]**2 + 0.5*x[1]**2))/sqrt(0.5*x[0]**2 + 0.5*x[1]**2)
+        h[0][0] = -0.2*x[0]**2*exp(-0.2*sqrt(0.5*x[0]**2 + 0.5*x[1]**2))/(0.5*x[0]**2 + 0.5*x[1]**2) - 1.0*x[0]**2*exp(-0.2*sqrt(0.5*x[0]**2 + 0.5*x[1]**2))/(0.5*x[0]**2 + 0.5*x[1]**2)**(3/2) - 1.0*np.pi**2*exp(0.5*cos(2.0*np.pi*x[0]) + 0.5*cos(2.0*np.pi*x[1]))*sin(2.0*np.pi*x[0])**2 + 2.0*np.pi**2*exp(0.5*cos(2.0*np.pi*x[0]) + 0.5*cos(2.0*np.pi*x[1]))*cos(2.0*np.pi*x[0]) + 2.0*exp(-0.2*sqrt(0.5*x[0]**2 + 0.5*x[1]**2))/sqrt(0.5*x[0]**2 + 0.5*x[1]**2)
+        h[0][1] = -0.2*x[0]*x[1]*exp(-0.2*sqrt(0.5*x[0]**2 + 0.5*x[1]**2))/(0.5*x[0]**2 + 0.5*x[1]**2) - 1.0*x[0]*x[1]*exp(-0.2*sqrt(0.5*x[0]**2 + 0.5*x[1]**2))/(0.5*x[0]**2 + 0.5*x[1]**2)**(3/2) - 1.0*np.pi**2*exp(0.5*cos(2.0*np.pi*x[0]) + 0.5*cos(2.0*np.pi*x[1]))*sin(2.0*np.pi*x[0])*sin(2.0*np.pi*x[1])
+        h[0][1] = h[1][0]
+        h[1][1] = -0.2*x[1]**2*exp(-0.2*sqrt(0.5*x[0]**2 + 0.5*x[1]**2))/(0.5*x[0]**2 + 0.5*x[1]**2) - 1.0*x[1]**2*exp(-0.2*sqrt(0.5*x[0]**2 + 0.5*x[1]**2))/(0.5*x[0]**2 + 0.5*x[1]**2)**(3/2) - 1.0*np.pi**2*exp(0.5*cos(2.0*np.pi*x[0]) + 0.5*cos(2.0*np.pi*x[1]))*sin(2.0*np.pi*x[1])**2 + 2.0*np.pi**2*exp(0.5*cos(2.0*np.pi*x[0]) + 0.5*cos(2.0*np.pi*x[1]))*cos(2.0*np.pi*x[1]) + 2.0*exp(-0.2*sqrt(0.5*x[0]**2 + 0.5*x[1]**2))/sqrt(0.5*x[0]**2 + 0.5*x[1]**2)
         # Return Hess
-        return hess
+        return h
