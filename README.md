@@ -1,5 +1,4 @@
-Continuous Testing Functions (ctf) for Optimisation
-===================================================
+# Continuous Testing Functions (ctf) for Optimisation
 
 A module containing many continuous testing functions for optimisation. Many are taken from http://www.sfu.ca/~ssurjano/optimization.html.
 
@@ -8,33 +7,30 @@ Each test function is implemented as a class with up to three methods for calcul
 Intended for testing the performance of mathematical optimisation routines.
 
 
-1D Function Summary
--------------------
+## 1D Function Summary
 
-Many Local Minima
-```
-
-Bowl Shaped
-```
-
-Plate-Shaped
-```
-
-Valley-Shaped
-```
-
-Steep Ridges/Drops
-```
-
-Other
-```
+### Many Local Minima
 
 
-2D Function Summary
--------------------
+### Bowl Shaped
 
-Many Local Minima
-```
+
+### Plate-Shaped
+
+
+### Valley-Shaped
+
+
+### Steep Ridges/Drops
+
+
+### Other
+
+
+
+## 2D Function Summary
+
+### Many Local Minima
 
   1. Ackley Function
   1. Bukin Function No. 6
@@ -53,8 +49,7 @@ Many Local Minima
   1. Schwefel Function
   1. Shubert Function
 
-Bowl Shaped
-```
+### Bowl Shaped
 
   1. Bohachevsky Functions
   1. Perm Function 0, d, β
@@ -64,8 +59,7 @@ Bowl Shaped
   1. Sum Squares Function
   1. Trid Function
 
-Plate-Shaped
-```
+### Plate-Shaped
 
   1. Booth Function
   1. Matyas Function
@@ -73,23 +67,20 @@ Plate-Shaped
   1. Power Sum Function
   1. Zakharov Function
 
-Valley-Shaped
-```
+### Valley-Shaped
 
   1. Three-Hump Camel Function
   1. Six-Hump Camel Function
   1. Dixon-Price Function
   1. Rosenbrock Function
 
-Steep Ridges/Drops
-```
+### Steep Ridges/Drops
 
   1. De Jong Function N. 5
   1. Easom Function
   1. Michalewicz Function
 
-Other
-```
+### Other
 
   1. Beale Function
   1. Branin Function
@@ -104,32 +95,29 @@ Other
   1. Shekel Function
   1. Styblinski-Tang Function
 
+## ND Function Summary
 
-ND Function Summary
--------------------
-
-
-Many Local Minima
-```
+### Many Local Minima
 
 
-Bowl Shaped
-```
+
+### Bowl Shaped
 
 
-Plate-Shaped
-```
+
+### Plate-Shaped
 
 
-Valley-Shaped
-```
+
+### Valley-Shaped
 
 
-Steep Ridges/Drops
-```
+
+### Steep Ridges/Drops
 
 
-Other
-```
+
+### Other
+
 
 
