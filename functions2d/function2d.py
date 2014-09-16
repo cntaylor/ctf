@@ -61,7 +61,7 @@ class Function2D():
         ## Plot
         plt.figure()
         plt.contourf(X0, X1, cost_norm, 50)
-        plt.scatter(self.min[0], self.min[1], c='w', marker='x')
+        plt.scatter(self.min[..., 0], self.min[..., 1], c='w', marker='x')
         plt.grid()
         plt.title(self.latex_name + "\n" + self.latex_cost)
         plt.xlabel('$x_0$')
@@ -110,7 +110,7 @@ class Function2D():
         ## Plot
         plt.figure()
         plt.quiver(X0, X1, -grad_norm[0], -grad_norm[1])
-        plt.scatter(self.min[0], self.min[1], c='w', marker='x')
+        plt.scatter(self.min[..., 0], self.min[..., 1], c='w', marker='x')
         plt.grid()
         plt.title(self.latex_name + "\n" + self.latex_cost)
         plt.xlabel('$x_0$')
@@ -167,7 +167,7 @@ class Function2D():
         ## Plot
         plt.figure()
         plt.contourf(X0c, X1c, cost_norm, 50)
-        plt.scatter(self.min[0], self.min[1], c='w', marker='x')
+        plt.scatter(self.min[..., 0], self.min[..., 1], c='w', marker='x')
         plt.streamplot(X0g, X1g, -grad_norm[0], -grad_norm[1], density=4.0, color='k')
         plt.scatter(self.min[0], self.min[1], c='w', marker='x')
         plt.grid()

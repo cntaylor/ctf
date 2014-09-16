@@ -17,7 +17,7 @@ class CrossInTray(Function2D):
         self.domain = np.array([[-10.0, 10.0], [-10.0, 10.0]])
         self.smooth = True
         self.info = [True, False, False]
-        self.latex_name = "Ackley's Function"
+        self.latex_name = "Cross in Tray Function"
         self.latex_type = "Many Local Minima"
         self.latex_cost = r'\[ f(x, y) = -0.0001 \left( \left| \sin \left(x\right) \sin \left(y\right) \exp \left( \left|100 - \frac{\sqrt{x^{2} + y^{2}}}{\pi} \right|\right)\right| + 1 \right)^{0.1} \]'
         self.latex_desc = "The Cross-in-Tray function has multiple global minima."

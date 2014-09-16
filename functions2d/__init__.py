@@ -7,7 +7,7 @@ from functions2d.drop_wave import DropWave
 from functions2d.eggholder import Eggholder
 from functions2d.griewank import Griewank
 from functions2d.holder_table import HolderTable
-from functions2d.levi_13 import Levi13
+from functions2d.levy_13 import Levy13
 from functions2d.rastrigin import Rastrigin
 from functions2d.schaffer_2 import Schaffer2
 from functions2d.schaffer_4 import Schaffer4

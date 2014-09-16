@@ -5,8 +5,8 @@ from functions2d.function2d import Function2D
 
 
 # Problem
-class Levi13(Function2D):
-    """ Levi 13 Function. """
+class Levy13(Function2D):
+    """ Levy 13 Function. """
 
     def __init__(self):
         """ Constructor. """
@@ -15,7 +15,7 @@ class Levi13(Function2D):
         self.domain = np.array([[-10.0, 10.0], [-10.0, 10.0]])
         self.smooth = True
         self.info = [True, True, True]
-        self.latex_name = "Levi No. 13"
+        self.latex_name = "Levy No. 13 Function"
         self.latex_type = "Many Local Minima"
         self.latex_cost = "\[ f(x,y) = ... \]"
         self.latex_desc = "description"

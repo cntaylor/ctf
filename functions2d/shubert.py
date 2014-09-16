@@ -25,6 +25,6 @@ class Shubert(Function2D):
         # Cost
         c = np.zeros(x.shape[1:])
         # Calculate Cost
-        c = np.sum([i*np.cos((i+1)*x[0] + i) for i in range(1, 6)])*np.sum([i*np.cos((i+1)*x[1] + i) for i in range(1, 6)])
+        c = np.sum([i*np.cos((i+1)*x[0] + i) for i in range(1, 6)], axis=0)*np.sum([i*np.cos((i+1)*x[1] + i) for i in range(1, 6)], axis=0)
         # Return Cost
         return c

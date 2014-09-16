@@ -14,7 +14,7 @@ class HolderTable(Function2D):
                              [8.05502, -9.66459],
                              [-8.05502, -9.66459]])
         self.value = np.array([-19.2085, -19.2085, -19.2085, -19.2085])
-        self.domain = np.array([[-15.0, -5.0], [-3.0, 3.0]])
+        self.domain = np.array([[-10, 10], [-10, 10]])
         self.smooth = False
         self.info = [True, False, False]
         self.latex_name = "Holder Table Function"
