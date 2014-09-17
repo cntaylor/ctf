@@ -2,12 +2,12 @@
 
 A module containing continuous testing functions for optimisation. Intended for testing the performance of mathematical optimisation routines. Many are taken from http://www.sfu.ca/~ssurjano/optimization.html.
 
-Each test function is implemented as a class with up to three methods for calculating the *cost*, *gradient* and *Hessian* information of the test functions.
+Each test function is implemented as a class with up to three methods for calculating the *cost*, *gradient* and *Hessian* information of the test functions. Additional information such as the global minimum value and position, the functions domain and its cost function are also provided.
 
 Requires Python 3 and depends on Numpy and MatPlotLib.
 
 
-### 1D Function Summary
+### 1D Test Functions
 
 **Many Local Minima**
 
@@ -24,7 +24,7 @@ Requires Python 3 and depends on Numpy and MatPlotLib.
   1. Forrester Function
 
 
-### 2D Function Summary
+### 2D Test Functions
 
 **Many Local Minima**
 
@@ -88,7 +88,7 @@ Requires Python 3 and depends on Numpy and MatPlotLib.
   1. Styblinski-Tang Function
 
 
-### ND Function Summary
+### ND Test Functions
 
 **Many Local Minima**
 
