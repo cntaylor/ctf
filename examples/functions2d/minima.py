@@ -1,7 +1,9 @@
 from examples.functions2d.utils import function_example
 from functions2d import *
 
-minima = [CrossInTray,
+minima = [Ackley,
+          Bukin,
+          CrossInTray,
           DropWave,
           Eggholder,
           Griewank,
@@ -13,7 +15,9 @@ minima = [CrossInTray,
           Schwefel,
           Shubert]
 
-name = ["cross_in_tray",
+name = ["ackley",
+        "bukin",
+        "cross_in_tray",
         "drop_wave",
         "eggholder",
         "griewank",

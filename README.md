@@ -28,7 +28,7 @@ Requires Python 3 and depends on Numpy and MatPlotLib.
 
 **Many Local Minima**
 
-  1. ![Ackley Function](http://github.com/lukemarris/ctf/examples/functions2d/images/ackley.png)
+  1. ![Ackley Function](/examples/functions2d/images/ackley.png)
   1. Bukin Function No. 6
   1. Cross-in-Tray Function
   1. Drop-Wave Function
