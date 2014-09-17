@@ -22,30 +22,30 @@ class Sphere(Function2D):
     def cost(self, x):
         """ Cost function. """
         # Cost
-        cost = np.zeros(1)
+        c = np.zeros(x.shape[1:])
         # Calculate Cost
-        cost[0] = x[0]**2 + x[1]**2
+        c = x[0]**2 + x[1]**2
         # Return Cost
-        return cost
+        return c
 
     def grad(self, x):
         """ Grad function. """
         # Grad
-        grad = np.zeros(2)
+        g = np.zeros(x.shape)
         # Calculate Grads
-        grad[0] = 2.0*x[0]
-        grad[1] = 2.0*x[1]
+        g[0] = 2.0*x[0]
+        g[1] = 2.0*x[1]
         # Return Grad
-        return grad
+        return g
 
     def hess(self, x):
         """ Hess function. """
         # Hess
-        hess = np.zeros(1)
-        # Hesses
-        hess[0][0] = 2.0
-        hess[0][1] = 0.0
-        hess[1][0] = hess[0][1]
-        hess[1][1] = 2.0
+        h = np.zeros((2, 2) + x.shape[1:])
+        # Calculate Hess
+        h[0][0] = 2.0
+        h[0][1] = 0.0
+        h[1][0] = h[0][1]
+        h[1][1] = 2.0
         # Return Hess
-        return hess
+        return h

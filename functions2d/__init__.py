@@ -1,4 +1,5 @@
-## Problem Imports
+""" 2D Test Functions """
+
 # Many Local Minima
 from functions2d.ackley import Ackley
 from functions2d.bukin import Bukin
@@ -15,7 +16,15 @@ from functions2d.schwefel import Schwefel
 from functions2d.shubert import Shubert
 
 # Bowl-Shaped
+from functions2d.bohachevsky_1 import Bohachevsky1
+from functions2d.bohachevsky_2 import Bohachevsky2
+from functions2d.bohachevsky_3 import Bohachevsky3
+from functions2d.perm import Perm
+from functions2d.rotated_hyper_ellipsoid import RotatedHyperEllipsoid
 from functions2d.sphere import Sphere
+from functions2d.sum_of_different_powers import SumOfDifferentPowers
+from functions2d.sum_squares import SumSquares
+from functions2d.trid import Trid
 
 # Plate-Shaped
 from functions2d.booth import Booth
