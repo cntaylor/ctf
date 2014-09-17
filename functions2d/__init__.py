@@ -30,6 +30,8 @@ from functions2d.trid import Trid
 from functions2d.booth import Booth
 from functions2d.matyas import Matyas
 from functions2d.mccormick import McCormick
+from functions2d.power_sum import PowerSum
+from functions2d.zakharov import Zakharov
 
 # Valley-Shaped
 from functions2d.three_hump_camel import ThreeHumpCamel

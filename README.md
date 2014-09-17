@@ -58,11 +58,11 @@ Requires Python 3 and depends on Numpy and MatPlotLib.
 
 **Plate-Shaped**
 
-  1. Booth Function
-  1. Matyas Function
-  1. McCormick Function
-  1. Power Sum Function
-  1. Zakharov Function
+  1. [Booth Function](/examples/functions2d/images/booth.png)
+  1. [Matyas Function](/examples/functions2d/images/matyas.png)
+  1. [McCormick Function](/examples/functions2d/images/mccormick.png)
+  1. [Power Sum Function](/examples/functions2d/images/power_sum.png)
+  1. [Zakharov Function](/examples/functions2d/images/zakharov.png)
 
 
 **Valley-Shaped**
