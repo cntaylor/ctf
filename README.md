@@ -28,7 +28,7 @@ Requires Python 3 and depends on Numpy and MatPlotLib.
 
 **Many Local Minima**
 
-  1. Ackley Function
+  1. ![Ackley Function](http://github.com/lukemarris/ctf/examples/functions2d/ackley.png)
   1. Bukin Function No. 6
   1. Cross-in-Tray Function
   1. Drop-Wave Function
@@ -102,7 +102,7 @@ Requires Python 3 and depends on Numpy and MatPlotLib.
 
 **Bowl Shaped**
 
-  1. Perm Function 0, d, β
+  1. Perm Function
   1. Rotated Hyper-Ellipsoid Function
   1. Sphere Function
   1. Sum of Different Powers Function
