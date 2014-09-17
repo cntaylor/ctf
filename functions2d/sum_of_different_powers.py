@@ -25,6 +25,6 @@ class SumOfDifferentPowers(Function2D):
         # Cost
         c = np.zeros(x.shape[1:])
         # Calculate Cost
-        c = np.sum([np.abs(x[i])**(i+2) for i in range(0, 2)])
+        c = np.sum([np.abs(x[i])**(i+2) for i in range(0, 2)], axis=0)
         # Return Cost
         return c

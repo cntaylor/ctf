@@ -26,6 +26,6 @@ class RotatedHyperEllipsoid(Function2D):
         # Cost
         c = np.zeros(x.shape[1:])
         # Calculate Cost
-        c = np.sum([np.sum([x[j]**2 for j in range(1, i+1)]) for i in range(1, 3)])
+        c = np.sum([np.sum([x[j]**2 for j in range(0, i+1)], axis=0) for i in range(0, 2)], axis=0)
         # Return Cost
         return c

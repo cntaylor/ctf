@@ -45,13 +45,15 @@ Requires Python 3 and depends on Numpy and MatPlotLib.
 
 **Bowl Shaped**
 
-  1. Bohachevsky Functions
-  1. Perm Function 0, d, β
-  1. Rotated Hyper-Ellipsoid Function
-  1. Sphere Function
-  1. Sum of Different Powers Function
-  1. Sum Squares Function
-  1. Trid Function
+  1. [Bohachevsky No. 1 Function](/examples/functions2d/images/bohachevsky_1.png)
+  1. [Bohachevsky No. 2 Function](/examples/functions2d/images/bohachevsky_2.png)
+  1. [Bohachevsky No. 3 Function](/examples/functions2d/images/bohachevsky_3.png)
+  1. [Perm Function](/examples/functions2d/images/perm.png)
+  1. [Rotated Hyper-Ellipsoid Function](/examples/functions2d/images/rotated_hyper_ellipsoid.png)
+  1. [Sphere Function](/examples/functions2d/images/sphere.png)
+  1. [Sum of Different Powers Function](/examples/functions2d/images/sum_of_different_powers.png)
+  1. [Sum Squares Function](/examples/functions2d/images/sum_squares.png)
+  1. [Trid Function](/examples/functions2d/images/trid.png)
 
 
 **Plate-Shaped**

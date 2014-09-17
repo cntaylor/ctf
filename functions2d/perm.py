@@ -24,6 +24,6 @@ class Perm(Function2D):
         # Cost
         c = np.zeros(x.shape[1:])
         # Calculate Cost
-        c = np.sum([np.sum([(j + 1)*(x[j]**i - 1/(j**i)) for j in range(1, 3)]) for i in range(1, 3)])
+        c = np.sum([np.sum([(j + 2)*(x[j]**i - 1/((j+1)**i)) for j in range(0, 2)], axis=0)**2 for i in range(1, 3)], axis=0)
         # Return Cost
         return c

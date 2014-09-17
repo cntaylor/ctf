@@ -9,7 +9,7 @@ class Trid(Function2D):
 
     def __init__(self):
         """ Constructor. """
-        self.min = np.array([0.0, 0.0])
+        self.min = np.array([2.0, 2.0])
         self.value = 0.0
         self.domain = np.array([[-4, 4], [-4, 4]])
         self.smooth = True
@@ -25,6 +25,6 @@ class Trid(Function2D):
         # Cost
         c = np.zeros(x.shape[1:])
         # Calculate Cost
-        c = np.sum([(x[i]-1)**2 for i in range(0, 2)]) - np.sum([x[i]*x[i-1] for i in range(1, 2)])
+        c = np.sum([(x[i]-1)**2 for i in range(0, 2)], axis=0) - np.sum([x[i]*x[i-1] for i in range(1, 2)], axis=0)
         # Return Cost
         return c
