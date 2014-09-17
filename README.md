@@ -28,19 +28,19 @@ Requires Python 3 and depends on Numpy and MatPlotLib.
 
 **Many Local Minima**
 
-  1. ![Ackley Function](/examples/functions2d/images/ackley.png)
-  1. Bukin Function No. 6
-  1. Cross-in-Tray Function
-  1. Drop-Wave Function
-  1. Eggholder Function
-  1. Griewank Function
-  1. Holder Table Function
-  1. Levy Function No. 13
-  1. Rastrigin Function
-  1. Schaffer Function No. 2
-  1. Schaffer Function No. 4
-  1. Schwefel Function
-  1. Shubert Function
+  1. [Ackley Function](/examples/functions2d/images/ackley.png)
+  1. [Bukin Function No. 6](/examples/functions2d/images/bukin.png)
+  1. [Cross-in-Tray Function](/examples/functions2d/images/cross_in_tray.png)
+  1. [Drop-Wave Function](/examples/functions2d/images/drop_wave.png)
+  1. [Eggholder Function](/examples/functions2d/images/eggholder.png)
+  1. [Griewank Function](/examples/functions2d/images/griewank.png)
+  1. [Holder Table Function](/examples/functions2d/images/holder_table.png)
+  1. [Levy Function No. 13](/examples/functions2d/images/levy_13.png)
+  1. [Rastrigin Function](/examples/functions2d/images/rastrigin.png)
+  1. [Schaffer Function No. 2](/examples/functions2d/images/schaffer_2.png)
+  1. [Schaffer Function No. 4](/examples/functions2d/images/schaffer_4.png)
+  1. [Schwefel Function](/examples/functions2d/images/schwefel.png)
+  1. [Shubert Function](/examples/functions2d/images/shubert.png)
 
 
 **Bowl Shaped**
