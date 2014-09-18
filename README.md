@@ -2,7 +2,7 @@
 
 A module containing continuous testing functions for optimisation. Intended for testing the performance of mathematical optimisation routines. Many are taken from http://www.sfu.ca/~ssurjano/optimization.html.
 
-Each test function is implemented as a class with up to three methods for calculating the *cost*, *gradient* and *Hessian* information of the test functions. Additional information such as the global minimum value and position, the functions domain and its cost function are also provided.
+Each test function is implemented as a class with up to three methods for calculating the *cost*, *gradient* and *Hessian* information of the test functions. Additional information such as the global minimum value and position, the function's domain and cost function are also provided.
 
 Requires Python 3 and depends on Numpy and MatPlotLib.
 
@@ -75,7 +75,7 @@ Requires Python 3 and depends on Numpy and MatPlotLib.
 
 **Steep Ridges/Drops**
 
-  1. De Jong Function N. 5
+  1. De Jong Function No. 5
   1. Easom Function
   1. Michalewicz Function
 
@@ -85,7 +85,6 @@ Requires Python 3 and depends on Numpy and MatPlotLib.
   1. Beale Function
   1. Branin Function
   1. Goldstein-Price Function
-  1. Perm Function d, β
   1. Powell Function
   1. Styblinski-Tang Function
 

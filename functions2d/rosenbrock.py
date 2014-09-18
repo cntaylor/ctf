@@ -16,7 +16,7 @@ class Rosenbrock(Function2D):
         self.info = [True, True, True]
         self.latex_name = "Rosenbrock Function"
         self.latex_type = "Valley Shaped"
-        self.latex_cost = r'\[ f(x,y) = f(\boldsymbol{x}) = \sum_{i=1}^{n-1} \left[ 100 \left(x_{i+1} - x_{i}^{2}\right)^{2} + \left(x_{i} - 1\right)^{2}\right] \]'
+        self.latex_cost = r'\[ f(\boldsymbol{x}) = \sum_{i=1}^{n-1} \left[ 100 \left(x_{i+1} - x_{i}^{2}\right)^{2} + \left(x_{i} - 1\right)^{2}\right] \]'
         self.latex_desc = "The Rosenbrock function, also referred to as the Valley or Banana function, is a popular " \
                           "test problem for gradient-based optimization algorithms. It is shown in the plot above in " \
                           "its two-dimensional form. The function is unimodal, and the global minimum lies in a " \

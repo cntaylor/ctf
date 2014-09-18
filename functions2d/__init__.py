@@ -40,7 +40,9 @@ from functions2d.dixon_price import DixonPrice
 from functions2d.rosenbrock import Rosenbrock
 
 # Steep
+from functions2d.de_jong_5 import DeJong5
 from functions2d.easom import Easom
+from functions2d.michalewicz import Michalewicz
 
 # Other
 from functions2d.beale import Beale
