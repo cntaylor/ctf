@@ -26,23 +26,30 @@ class Rosenbrock(Function2D):
     def cost(self, x):
         """ Cost function. """
         # Cost
-        cost = 100.0*(x[1] - x[0]**2.0)**2.0 + (x[0] - 1.0)**2.0
+        c = np.zeros(x.shape[1:])
+        # Calculate Cost
+        c = 100.0*(x[1] - x[0]**2.0)**2.0 + (x[0] - 1.0)**2.0
         # Return Cost
-        return cost
+        return c
 
     def grad(self, x):
         """ Grad function. """
-        # Grads
-        dx = -400.0*x[0]*(x[1] - x[0]**2.0) + 2.0*(x[0] - 1.0)
-        dy = 200.0*(x[1] - x[0]**2.0)
+        # Grad
+        g = np.zeros(x.shape)
+        # Calculate Grads
+        g[0] = -400.0*x[0]*(x[1] - x[0]**2.0) + 2.0*(x[0] - 1.0)
+        g[1] = 200.0*(x[1] - x[0]**2.0)
         # Return Grad
-        return np.array([dx, dy])
+        return g
 
     def hess(self, x):
         """ Hess function. """
-        # Grads
-        dxx = -400.0*x[1] + 1200.0*x[0]**2.0 + 2.0
-        dxy = -400.0*x[0]
-        dyy = 200.0
-        # Return Grad
-        return np.array([[dxx, dxy], [dxy, dyy]])
+        # Hess
+        h = np.zeros((2, 2) + x.shape[1:])
+        # Calculate Hess
+        h[0][0] = -400.0*x[1] + 1200.0*x[0]**2.0 + 2.0
+        h[0][1] = -400.0*x[0]
+        h[1][0] = h[0][1]
+        h[1][1] = 200.0
+        # Return Hess
+        return h

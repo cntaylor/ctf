@@ -67,10 +67,10 @@ Requires Python 3 and depends on Numpy and MatPlotLib.
 
 **Valley-Shaped**
 
-  1. Three-Hump Camel Function
-  1. Six-Hump Camel Function
-  1. Dixon-Price Function
-  1. Rosenbrock Function
+  1. [Three-Hump Camel Function](/examples/functions2d/images/three_hump_camel.png)
+  1. [Six-Hump Camel Function](/examples/functions2d/images/six_hump_camel.png)
+  1. [Dixon-Price Function](/examples/functions2d/images/dixon_price.png)
+  1. [Rosenbrock Function](/examples/functions2d/images/rosenbrock.png)
 
 
 **Steep Ridges/Drops**

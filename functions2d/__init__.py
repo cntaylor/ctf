@@ -35,6 +35,8 @@ from functions2d.zakharov import Zakharov
 
 # Valley-Shaped
 from functions2d.three_hump_camel import ThreeHumpCamel
+from functions2d.six_hump_camel import SixHumpCamel
+from functions2d.dixon_price import DixonPrice
 from functions2d.rosenbrock import Rosenbrock
 
 # Steep

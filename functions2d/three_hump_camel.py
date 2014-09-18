@@ -22,30 +22,30 @@ class ThreeHumpCamel(Function2D):
     def cost(self, x):
         """ Cost function. """
         # Cost
-        cost = np.zeros(1)
+        c = np.zeros(x.shape[1:])
         # Calculate Cost
-        cost[0] = 2.0*x[0]**2.0 - 1.05*x[0]**4.0 + (x[0]**6.0)/6.0 + x[0]*x[1] + x[1]**2.0
+        c = 2.0*x[0]**2.0 - 1.05*x[0]**4.0 + (x[0]**6.0)/6.0 + x[0]*x[1] + x[1]**2.0
         # Return Cost
-        return cost
+        return c
 
     def grad(self, x):
         """ Grad function. """
         # Grad
-        grad = np.zeros(2)
+        g = np.zeros(x.shape)
         # Calculate Grads
-        grad[0] = 4.0*x[0]**1.0 - 4.2*x[0]**3.0 + 1.0*x[0]**5.0 + x[1]
-        grad[1] = x[0] + 2.0*x[1]**1.0
+        g[0] = 4.0*x[0]**1.0 - 4.2*x[0]**3.0 + 1.0*x[0]**5.0 + x[1]
+        g[1] = x[0] + 2.0*x[1]**1.0
         # Return Grad
-        return grad
+        return g
 
     def hess(self, x):
         """ Hess function. """
         # Hess
-        hess = np.zeros(1)
+        h = np.zeros((2, 2) + x.shape[1:])
         # Calculate Hess
-        hess[0][0] = -12.6*x[0]**2.0 + 5.0*x[0]**4.0 + 4.0
-        hess[0][1] = 1.0
-        hess[1][0] = hess[0][1]
-        hess[1][1] = 2.0
+        h[0][0] = -12.6*x[0]**2.0 + 5.0*x[0]**4.0 + 4.0
+        h[0][1] = 1.0
+        h[1][0] = h[0][1]
+        h[1][1] = 2.0
         # Return Hess
-        return hess
+        return h
