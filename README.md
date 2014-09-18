@@ -75,9 +75,9 @@ Requires Python 3 and depends on Numpy and MatPlotLib.
 
 **Steep Ridges/Drops**
 
-  1. De Jong Function No. 5
-  1. Easom Function
-  1. Michalewicz Function
+  1. [De Jong Function No. 5](/examples/functions2d/images/de_jong_5.png)
+  1. [Easom Function](/examples/functions2d/images/easom.png)
+  1. [Michalewicz Function](/examples/functions2d/images/michalewicz.png)
 
 
 **Other**
