@@ -10,11 +10,14 @@ class Shubert(Function2D):
 
     def __init__(self):
         """ Constructor. """
+        # Information
         self.min = np.array([0.0, 0.0])
         self.value = -186.7309
         self.domain = np.array([[-5.12, 5.12], [-5.12, 5.12]])
+        self.n = 2
         self.smooth = True
         self.info = [True, False, False]
+        # Description
         self.latex_name = "Shubert Function"
         self.latex_type = "Many Local Minima"
         self.latex_cost = "\[ f(x,y) = ... \]"

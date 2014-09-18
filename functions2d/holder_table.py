@@ -9,14 +9,17 @@ class HolderTable(Function2D):
 
     def __init__(self):
         """ Constructor. """
+        # Information
         self.min = np.array([[8.05502, 9.66459],
                              [-8.05502, 9.66459],
                              [8.05502, -9.66459],
                              [-8.05502, -9.66459]])
         self.value = np.array([-19.2085, -19.2085, -19.2085, -19.2085])
         self.domain = np.array([[-10, 10], [-10, 10]])
+        self.n = 2
         self.smooth = False
         self.info = [True, False, False]
+        # Description
         self.latex_name = "Holder Table Function"
         self.latex_type = "Many Local Minima"
         self.latex_cost = r'\[ f(x, y) = ... \]'

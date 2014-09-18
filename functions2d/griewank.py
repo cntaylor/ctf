@@ -10,11 +10,14 @@ class Griewank(Function2D):
 
     def __init__(self):
         """ Constructor. """
+        # Information
         self.min = np.array([0.0, 0.0])
         self.value = 0.0
         self.domain = np.array([[-600.0, 600.0], [-600.0, 600.0]])
+        self.n = 2
         self.smooth = True
         self.info = [True, False, False]
+        # Description
         self.latex_name = "Griewank Function"
         self.latex_type = "Many Local Minima"
         self.latex_cost = r'\[ f(x,y) = ... \]'

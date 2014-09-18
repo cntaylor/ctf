@@ -9,11 +9,14 @@ class DixonPrice(Function2D):
 
     def __init__(self):
         """ Constructor. """
+        # Information
         self.min = np.array([2**(-(2**i - 2)/(2**i)) for i in range(1, 3)])
         self.value = 0.0
         self.domain = np.array([[-3.0, 3.0], [-2.0, 2.0]])
+        self.n = 2
         self.smooth = True
         self.info = [True, False, False]
+        # Description
         self.latex_name = "Dixon-Price Function"
         self.latex_type = "Valley Shaped"
         self.latex_cost = r'\[ f(x,y) = ... \]'

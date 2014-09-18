@@ -10,9 +10,11 @@ class Easom(Function2D):
 
     def __init__(self):
         """ Constructor. """
+        # Information
         self.min = np.array([pi, pi])
         self.value = -1
         self.domain = np.array([[-100.0, 100.0], [-100.0, 100.0]])
+        self.n = 2
         self.smooth = True
         self.info = [True, True, True]
         # Description

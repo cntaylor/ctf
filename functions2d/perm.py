@@ -9,11 +9,14 @@ class Perm(Function2D):
 
     def __init__(self):
         """ Constructor. """
+        # Information
         self.min = np.array([1.0, 0.5])
         self.value = 0.0
         self.domain = np.array([[-2, 2], [-2, 2]])
+        self.n = 2
         self.smooth = True
         self.info = [True, False, False]
+        # Description
         self.latex_name = "Perm Function"
         self.latex_type = "Bowl-Shaped"
         self.latex_cost = "\[ f(x,y) = ... \]"

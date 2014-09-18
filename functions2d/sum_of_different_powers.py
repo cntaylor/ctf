@@ -9,11 +9,14 @@ class SumOfDifferentPowers(Function2D):
 
     def __init__(self):
         """ Constructor. """
+        # Information
         self.min = np.array([0.0, 0.0])
         self.value = 0.0
         self.domain = np.array([[-1, 1], [-1, 1]])
+        self.n = 2
         self.smooth = True
         self.info = [True, False, False]
+        # Description
         self.latex_name = "Sum of Different Powers Function"
         self.latex_type = "Bowl-Shaped"
         self.latex_cost = "\[ f(x,y) = \sum_{i=1}^d  |x_i|^{i+1} \]"

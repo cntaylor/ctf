@@ -10,12 +10,14 @@ class Ackley(Function2D):
 
     def __init__(self):
         """ Constructor. """
-        # Meta Information
+        # Information
         self.min = np.array([0.0, 0.0])
         self.value = 0.0
         self.domain = np.array([[-5.0, 5.0], [-5.0, 5.0]])
+        self.n = 2
         self.smooth = True
         self.info = [True, True, True]
+        # Description
         self.latex_name = "Ackley's Function"
         self.latex_type = "Many Local Minima"
         self.latex_cost = r'$\displaystyle f(x, y)  = -20\exp\left(-0.2\sqrt{0.5\left(x^{2}+y^{2}\right)}\right) -\exp\left(0.5\left(\cos\left(2\pi x\right)+\cos\left(2\pi y\right)\right)\right) + 20 + e $'

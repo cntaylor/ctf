@@ -9,11 +9,14 @@ class Bukin(Function2D):
 
     def __init__(self):
         """ Constructor. """
+        # Information
         self.min = np.array([-10.0, 1.0])
         self.value = 0.0
         self.domain = np.array([[-15.0, -5.0], [-3.0, 3.0]])
+        self.n = 2
         self.smooth = False
         self.info = [True, False, False]
+        # Description
         self.latex_name = "Bukin Function No.6"
         self.latex_type = "Many Local Minima"
         self.latex_cost = r'\[ f(x, y) = f(x,y) = 100\sqrt{\left|y - 0.01x^{2}\right|} + 0.01 \left|x+10 \right| \]'

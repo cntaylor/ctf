@@ -10,11 +10,14 @@ class McCormick(Function2D):
 
     def __init__(self):
         """ Constructor. """
+        # Information
         self.min = np.array([-0.54719, -1.54719])
         self.value = -1.9133
         self.domain = np.array([[-1.5, 4.0], [-3.0, 4.0]])
+        self.n = 2
         self.smooth = True
         self.info = [True, True, True]
+        # Description
         self.latex_name = "McCormick Function"
         self.latex_type = "Plate-Shaped"
         self.latex_cost = "\[ f(x,y) = ... \]"

@@ -9,11 +9,14 @@ class Rosenbrock(Function2D):
 
     def __init__(self):
         """ Constructor. """
+        # Information
         self.min = np.array([1.0, 1.0])
         self.value = 0.0
         self.domain = np.array([[-np.inf, np.inf], [-np.inf, np.inf]])
+        self.n = 2
         self.smooth = True
         self.info = [True, True, True]
+        # Description
         self.latex_name = "Rosenbrock Function"
         self.latex_type = "Valley Shaped"
         self.latex_cost = r'\[ f(\boldsymbol{x}) = \sum_{i=1}^{n-1} \left[ 100 \left(x_{i+1} - x_{i}^{2}\right)^{2} + \left(x_{i} - 1\right)^{2}\right] \]'

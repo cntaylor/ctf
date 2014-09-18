@@ -9,11 +9,14 @@ class DropWave(Function2D):
 
     def __init__(self):
         """ Constructor. """
+        # Information
         self.min = np.array([0.0, 0.0])
         self.value = np.array([-1.0])
         self.domain = np.array([[-5.12, 5.12], [-5.12, 5.12]])
+        self.n = 2
         self.smooth = True
         self.info = [True, False, False]
+        # Description
         self.latex_name = "Drop Wave Function"
         self.latex_type = "Many Local Minima"
         self.latex_cost = r'\[ f(x, y) = ... \]'

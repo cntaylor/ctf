@@ -10,11 +10,14 @@ class Matyas(Function2D):
 
     def __init__(self):
         """ Constructor. """
+        # Information
         self.min = np.array([0.0, 0.0])
         self.value = 0.0
         self.domain = np.array([[-10.0, 10.0], [-10.0, 10.0]])
+        self.n = 2
         self.smooth = True
         self.info = [True, True, True]
+        # Description
         self.latex_name = "Matyas Function"
         self.latex_type = "Plate-Shaped"
         self.latex_cost = "f(x,y) = ..."

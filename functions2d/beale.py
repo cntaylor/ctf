@@ -10,9 +10,14 @@ class Beale(Function2D):
 
     def __init__(self):
         """ Constructor. """
+        # Information
         self.min = np.array([3.0, 0.5])
         self.value = 0.0
         self.domain = np.array([[-4.5, 4.5], [-4.5, 4.5]])
+        self.n = 2
+        self.smooth = True
+        self.info = [True, True, True]
+        # Description
         self.latex_name = "Beale Function"
         self.latex_cost = "\[ f(x,y) = ... \]"
         self.latex_desc = "The Beale function is multimodal, with sharp peaks at the corners of the input domain. "

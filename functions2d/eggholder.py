@@ -10,11 +10,14 @@ class Eggholder(Function2D):
 
     def __init__(self):
         """ Constructor. """
+        # Information
         self.min = np.array([512, 404.2319])
         self.value = -959.6407
         self.domain = np.array([[-512.0, 512.0], [-512.0, 512.0]])
+        self.n = 2
         self.smooth = True
         self.info = [True, False, False]
+        # Description
         self.latex_name = "Eggholder Function"
         self.latex_type = "Many Local Minima"
         self.latex_cost = r'\[ f(x,y) = - \left(y+47\right) \sin \left(\sqrt{\left|y + \frac{x}{2}+47\right|}\right) - x \sin \left(\sqrt{\left|x - \left(y + 47 \right)\right|}\right) \]'

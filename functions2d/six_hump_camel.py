@@ -9,12 +9,15 @@ class SixHumpCamel(Function2D):
 
     def __init__(self):
         """ Constructor. """
+        # Information
         self.min = np.array([[0.0898, -0.7126],
                              [-0.0898, 0.7126]])
         self.value = np.array([-1.0316])
         self.domain = np.array([[-3.0, 3.0], [-2.0, 2.0]])
+        self.n = 2
         self.smooth = True
         self.info = [True, False, False]
+        # Description
         self.latex_name = "Six Hump Camel Function"
         self.latex_type = "Valley Shaped"
         self.latex_cost = r'\[ f(x,y) = ... \]'

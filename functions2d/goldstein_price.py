@@ -10,9 +10,12 @@ class GoldsteinPrice(Function2D):
 
     def __init__(self):
         """ Constructor. """
+        # Information
         self.min = np.array([0.0, -1.0])
         self.value = 3.0
         self.domain = np.array([[-2.0, 2.0], [-2.0, 2.0]])
+        self.n = 2
+        # Description
         self.latex_name = "Goldstein-Price"
         self.latex_cost = "\[ f(x,y) = ... \]"
         self.latex_desc = "The Goldstein-Price function has several local minima. "

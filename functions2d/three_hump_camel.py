@@ -9,11 +9,14 @@ class ThreeHumpCamel(Function2D):
 
     def __init__(self):
         """ Constructor. """
+        # Information
         self.min = np.array([0.0, 0.0])
         self.value = 0.0
         self.domain = np.array([[-5.0, 5.0], [-5.0, 5.0]])
+        self.n = 2
         self.smooth = True
         self.info = [True, True, True]
+        # Description
         self.latex_name = "Three Hump Camel Function"
         self.latex_type = "Valley Shaped"
         self.latex_cost = r'\[ f(x,y) = 2x^{2} - 1.05x^{4} + \frac{x^{6}}{6} + xy + y^{2} \]'

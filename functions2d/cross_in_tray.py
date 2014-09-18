@@ -9,14 +9,17 @@ class CrossInTray(Function2D):
 
     def __init__(self):
         """ Constructor. """
+        # Information
         self.min = np.array([[1.34941, 1.34941],
                              [1.34941, -1.34941],
                              [-1.34941, 1.34941],
                              [-1.34941, -1.34941]])
         self.value = np.array([-2.06261, -2.06261, -2.06261, -2.06261])
         self.domain = np.array([[-10.0, 10.0], [-10.0, 10.0]])
+        self.n = 2
         self.smooth = True
         self.info = [True, False, False]
+        # Description
         self.latex_name = "Cross in Tray Function"
         self.latex_type = "Many Local Minima"
         self.latex_cost = r'\[ f(x, y) = -0.0001 \left( \left| \sin \left(x\right) \sin \left(y\right) \exp \left( \left|100 - \frac{\sqrt{x^{2} + y^{2}}}{\pi} \right|\right)\right| + 1 \right)^{0.1} \]'
