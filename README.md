@@ -84,8 +84,8 @@ Requires Python 3 and depends on Numpy and MatPlotLib.
 
   1. [Beale Function](/examples/functions2d/images/beale.png)
   1. [Branin Function](/examples/functions2d/images/branin.png)
-  1. [Goldstein-Price Function](/examples/functions2d/images/goldstein.png)
-  1. [Styblinski-Tang Function](/examples/functions2d/images/styblinski.png)
+  1. [Goldstein-Price Function](/examples/functions2d/images/goldstein_price.png)
+  1. [Styblinski-Tang Function](/examples/functions2d/images/styblinski_tang.png)
 
 
 ### ND Test Functions
