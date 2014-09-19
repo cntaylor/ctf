@@ -46,7 +46,8 @@ from functions2d.michalewicz import Michalewicz
 
 # Other
 from functions2d.beale import Beale
+from functions2d.branin import Branin
 from functions2d.goldstein_price import GoldsteinPrice
-#from functions2d.styblinski_tang import StyblinskiTang
+from functions2d.styblinski_tang import StyblinskiTang
 
 

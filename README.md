@@ -85,7 +85,6 @@ Requires Python 3 and depends on Numpy and MatPlotLib.
   1. Beale Function
   1. Branin Function
   1. Goldstein-Price Function
-  1. Powell Function
   1. Styblinski-Tang Function
 
 
