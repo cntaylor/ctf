@@ -23,7 +23,7 @@ class DeJong5(Function2D):
         # Description
         self.latex_name = "De Jong No. 5"
         self.latex_type = "Steep"
-        self.latex_cost = "\[ f(x,y) = ... \]"
+        self.latex_cost = r"\[  f(\mathbf{x}) = \left ( 0.002 + \sum_{j=1}^25 \frac{1}{j + (x_0 - a_{0j})^6 + (x_1 - a_{1j})^6} \right )^{-1} \]"
         self.latex_desc = "The fifth function of De Jong is multimodal, with very sharp drops on a mainly flat surface.  "
 
     def cost(self, x):

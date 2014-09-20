@@ -19,7 +19,7 @@ class Easom(Function2D):
         self.info = [True, True, True]
         # Description
         self.latex_name = "Easom Function"
-        self.latex_cost = "\[ f(x,y) = ... \]"
+        self.latex_cost = r"\[ f(\mathbf{x}) = - \cos(x_0) \cos(x_1) \exp(-(x_0 - \pi)^2-(x_1 - \pi)^2) \]"
         self.latex_desc = "The Easom function has several local minima. It is unimodal, and the global minimum has a " \
                           "small area relative to the search space. "
 

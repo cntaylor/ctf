@@ -20,7 +20,7 @@ class SixHumpCamel(Function2D):
         # Description
         self.latex_name = "Six Hump Camel Function"
         self.latex_type = "Valley Shaped"
-        self.latex_cost = r'\[ f(x,y) = ... \]'
+        self.latex_cost = r"\[ f(\mathbf{x}) = \left ( 4 - 2.1 x_0^2 + \frac{x_0^4}{3} \right ) x_0^2 + x_0 x_1 + (-4 + 4 x_1^2) x_1^2 \]"
         self.latex_desc = "The function has six local minima.  "
 
     def cost(self, x):

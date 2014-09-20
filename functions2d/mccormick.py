@@ -20,7 +20,7 @@ class McCormick(Function2D):
         # Description
         self.latex_name = "McCormick Function"
         self.latex_type = "Plate-Shaped"
-        self.latex_cost = "\[ f(x,y) = ... \]"
+        self.latex_cost = r"\[ f(\mathbf{x}) = \sin(x_0 + x_1) + (x_0 - x_1)^2 - 1.5 x_0 + 2.5 x_1 + 1 \]"
         self.latex_desc = "description"
 
     def cost(self, x):

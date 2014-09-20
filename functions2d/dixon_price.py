@@ -19,8 +19,8 @@ class DixonPrice(Function2D):
         # Description
         self.latex_name = "Dixon-Price Function"
         self.latex_type = "Valley Shaped"
-        self.latex_cost = r'\[ f(x,y) = ... \]'
-        self.latex_desc = "....  "
+        self.latex_cost = r"\[ f(\mathbf{x}) = (x_0 - 1)^2 + \sum_{i=1}^{d-1} i(2x_i^2 - x_{i-1})^2 \]"
+        self.latex_desc = " Valley with two local minima."
 
     def cost(self, x):
         """ Cost function. """

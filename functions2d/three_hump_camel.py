@@ -19,7 +19,7 @@ class ThreeHumpCamel(Function2D):
         # Description
         self.latex_name = "Three Hump Camel Function"
         self.latex_type = "Valley Shaped"
-        self.latex_cost = r'\[ f(x,y) = 2x^{2} - 1.05x^{4} + \frac{x^{6}}{6} + xy + y^{2} \]'
+        self.latex_cost = r"\[ f(\mathbf{x}) = 2x_0^{2} - 1.05x_0^{4} + \frac{x_0^{6}}{6} + x_0 x_1 +  ^{2} \]"
         self.latex_desc = "The function has three local minima.  "
 
     def cost(self, x):

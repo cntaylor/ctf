@@ -20,7 +20,7 @@ class Matyas(Function2D):
         # Description
         self.latex_name = "Matyas Function"
         self.latex_type = "Plate-Shaped"
-        self.latex_cost = "f(x,y) = ..."
+        self.latex_cost = r"\[ f(\mathbf{x}) = 0.26(x_0^2 + x_1^2) - 0.48 x_0 x_1 \]"
         self.latex_desc = "This function..."
 
     def cost(self, x):

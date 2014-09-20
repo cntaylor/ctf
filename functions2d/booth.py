@@ -19,7 +19,7 @@ class Booth(Function2D):
         # Description
         self.latex_name = "Booth Function"
         self.latex_type = "Plate-Shaped"
-        self.latex_cost = "\[ f(x,y) = ... \]"
+        self.latex_cost = r"\[ f(\mathbf{x}) = (x_0 + 2 x_1 - 7)^2 + (2x_0 + x_2 - 5)^2 \]"
         self.latex_desc = "Plate shaped function."
 
     def cost(self, x):

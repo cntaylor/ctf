@@ -19,8 +19,8 @@ class Zakharov(Function2D):
         # Description
         self.latex_name = "Zakharov Function"
         self.latex_type = "Plate-Shaped"
-        self.latex_cost = "\[ f(x,y) = ... \]"
-        self.latex_desc = "... "
+        self.latex_cost = r"\[ f(\mathbf{x}) = \sum_{i=0}^{d-1} x_i^2 + \left ( \sum_{i=0}^{d-1} 0.5 (i+1) x_i \right )^2 + \left ( \sum_{i=0}^{d-1} 0.5 (i+1) x_i \right )^4  \]"
+        self.latex_desc = "Single global minimum plate-like function."
 
     def cost(self, x):
         """ Cost function. """

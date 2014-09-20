@@ -1,11 +1,26 @@
 ## Continuous Testing Functions for Optimisation
 
-A module containing continuous testing functions for optimisation. Intended for testing the performance of mathematical optimisation routines. Many are taken from http://www.sfu.ca/~ssurjano/optimization.html.
+A module containing continuous testing functions for optimisation in one, two and multi-dimensional implementations. Intended for testing the performance of mathematical optimisation routines. Many are taken from http://www.sfu.ca/~ssurjano/optimization.html.
 
 Each test function is implemented as a class with up to three methods for calculating the *cost*, *gradient* and *Hessian* information of the test functions. Additional information such as the global minimum value and position, the function's domain and cost function are also provided.
 
+
+### Test Function Implementation
+
+...
+
+
+### Code Demonstration
+
+...
+
+
+### Requirements and Dependencies
+
 Requires Python 3 and depends on Numpy and MatPlotLib.
 
+
+## Included Test Functions
 
 ### 1D Test Functions
 
