@@ -9,7 +9,7 @@ Each test function is implemented as a class with up to three methods for calcul
 
 Each test function has up to three methods which calculate the *cost*, *gradient* and *Hessian* information. It also contains much other useful information. The implementation of the 2D Rosenbrock is shown below.
 
-'''python
+```python
 class Rosenbrock(Function2D):
     """ Rosenbrock Function. """
 
@@ -62,7 +62,7 @@ class Rosenbrock(Function2D):
         h[1][1] = 200.0
         # Return Hess
         return h
-'''
+```
 
 
 ### Code Demonstration
