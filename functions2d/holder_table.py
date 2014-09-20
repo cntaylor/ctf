@@ -22,7 +22,7 @@ class HolderTable(Function2D):
         # Description
         self.latex_name = "Holder Table Function"
         self.latex_type = "Many Local Minima"
-        self.latex_cost = r'\[ f(x, y) = ... \]'
+        self.latex_cost = r"\[ f(\mathbf{x}) = \left | \sin(x_0) \cos(x_1) \exp \left ( \left | 1 - \frac{\sqrt{x_0^2 + x_1^2}}{\pi} \right | \right ) \right | \]"
         self.latex_desc = "The Holder Table function has many local minima, with four global minima. "
 
     def cost(self, x):

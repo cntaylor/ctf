@@ -19,7 +19,7 @@ class Rastrigin(Function2D):
         # Description
         self.latex_name = "Rastrigin Function"
         self.latex_type = "Many Local Minima"
-        self.latex_cost = "\[ f(x,y) = ... \]"
+        self.latex_cost = r"\[ f(\mathbf{x}) = 10d + \sum_{i=0}^{d-1} [x_i^2 - 10 \cos(2 \pi x_i)] \]"
         self.latex_desc = "The Rastrigin function has several local minima. It is highly multimodal, but locations of the minima are regularly distributed."
 
     def cost(self, x):

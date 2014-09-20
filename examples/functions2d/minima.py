@@ -2,7 +2,7 @@ from examples.functions2d.utils import function_example
 from functions2d import *
 
 minima = [Ackley,
-          Bukin,
+          Bukin6,
           CrossInTray,
           DropWave,
           Eggholder,
@@ -16,7 +16,7 @@ minima = [Ackley,
           Shubert]
 
 name = ["ackley",
-        "bukin",
+        "bukin_6",
         "cross_in_tray",
         "drop_wave",
         "eggholder",

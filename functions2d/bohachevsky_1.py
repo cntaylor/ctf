@@ -19,8 +19,8 @@ class Bohachevsky1(Function2D):
         # Description
         self.latex_name = "Bohachevsky No. 1 Function"
         self.latex_type = "Bowl-Shaped"
-        self.latex_cost = "\[ f(x,y) = ... \]"
-        self.latex_desc = "..."
+        self.latex_cost = r"\[ f(\mathbf{x}) = x_0^2 + 2x_1^2 - 0.3 \cos(3 \pi x_0) - 0.4 \cos(4 \pi x_1) + 0.7 \]"
+        self.latex_desc = "A bowl-shaped function."
 
     def cost(self, x):
         """ Cost function. """

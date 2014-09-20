@@ -19,7 +19,7 @@ class Sphere(Function2D):
         # Description
         self.latex_name = "Sphere Function"
         self.latex_type = "Bowl-Shaped"
-        self.latex_cost = "\[ f(x,y) = ... \]"
+        self.latex_cost = r"\[ f(\mathbf{x}) = \sum_{i=0}^{d-1} x_i^2 \]"
         self.latex_desc = "It is continuous, convex and unimodal."
 
     def cost(self, x):

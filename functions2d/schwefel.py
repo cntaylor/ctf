@@ -20,7 +20,7 @@ class Schwefel(Function2D):
         # Description
         self.latex_name = "Schwefel Function"
         self.latex_type = "Many Local Minima"
-        self.latex_cost = "\[ f(x,y) = ... \]"
+        self.latex_cost = r"\[ f(\mathbf{x}) = 418.9829 d - \sum_{i=0}^{d-1} x_i \sin(\sqrt{|x_i|}) \]"
         self.latex_desc = "The Schwefel function is complex, with many local minima."
 
     def cost(self, x):

@@ -19,7 +19,7 @@ class RotatedHyperEllipsoid(Function2D):
         # Description
         self.latex_name = "Rotated Hyper-Ellipsoid Function"
         self.latex_type = "Bowl-Shaped"
-        self.latex_cost = "\[ f(x,y) = \sum_{i=1}^d \sum_{j=1}^i x_j^2 \]"
+        self.latex_cost = r"\[ f(\mathbf{x}) = \sum_{i=0}^{d-1} \sum_{j=1}^i x_j^2 \]"
         self.latex_desc = "The Rotated Hyper-Ellipsoid function is continuous, convex and unimodal. It is an " \
                           "extension of the Axis Parallel Hyper-Ellipsoid function, also referred to as the Sum " \
                           "Squares function. The plot shows its two-dimensional form. "

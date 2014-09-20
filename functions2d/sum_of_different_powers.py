@@ -19,7 +19,7 @@ class SumOfDifferentPowers(Function2D):
         # Description
         self.latex_name = "Sum of Different Powers Function"
         self.latex_type = "Bowl-Shaped"
-        self.latex_cost = "\[ f(x,y) = \sum_{i=1}^d  |x_i|^{i+1} \]"
+        self.latex_cost = r"\[ f(\mathbf{x}) = \sum_{i=0}^d  |x_i|^{i+2} \]"
         self.latex_desc = " The Sum of Different Powers function is unimodal. It is shown here in its two-dimensional" \
                           " form.  "
 

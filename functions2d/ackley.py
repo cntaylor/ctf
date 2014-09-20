@@ -10,6 +10,10 @@ class Ackley(Function2D):
 
     def __init__(self):
         """ Constructor. """
+        # Constants
+        self.a = 20
+        self.b = 0.2
+        self.c = 2*np.pi
         # Information
         self.min = np.array([0.0, 0.0])
         self.value = 0.0
@@ -20,7 +24,7 @@ class Ackley(Function2D):
         # Description
         self.latex_name = "Ackley's Function"
         self.latex_type = "Many Local Minima"
-        self.latex_cost = r'$\displaystyle f(x, y)  = -20\exp\left(-0.2\sqrt{0.5\left(x^{2}+y^{2}\right)}\right) -\exp\left(0.5\left(\cos\left(2\pi x\right)+\cos\left(2\pi y\right)\right)\right) + 20 + e $'
+        self.latex_cost = r"\[ f(\mathbf{x})  = -20\exp\left(-0.2\sqrt{0.5\left(x_0^{2}+x_1^{2}\right)}\right) -\exp\left(0.5\left(\cos\left(2\pi x_0\right)+\cos\left(2\pi x_1\right)\right)\right) + 20 + \exp(1) \]"
         self.latex_desc = "It is characterized by a nearly flat outer region, and a large hole at the centre. The " \
                           "function poses a risk for optimization algorithms, particularly hillclimbing algorithms, " \
                           "to be trapped in one of its many local minima. "

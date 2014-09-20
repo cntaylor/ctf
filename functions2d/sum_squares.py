@@ -19,8 +19,8 @@ class SumSquares(Function2D):
         # Description
         self.latex_name = "Sum Squares Function"
         self.latex_type = "Bowl-Shaped"
-        self.latex_cost = "\[ f(x,y) = \sum_{i=1}^d  i x_i^2 \]"
-        self.latex_desc = " The Sum Squares function, also referred to as the Axis Parallel Hyper-Ellipsoid" \
+        self.latex_cost = r"\[ f(\mathbf{x}) = \sum_{i=0}^d  (i + 1) x_i^2 \]"
+        self.latex_desc = "The Sum Squares function, also referred to as the Axis Parallel Hyper-Ellipsoid" \
                           "function, has no local minimum except the global one. It is continuous, convex and unimodal."
 
     def cost(self, x):

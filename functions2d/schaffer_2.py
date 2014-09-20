@@ -19,7 +19,7 @@ class Schaffer2(Function2D):
         # Description
         self.latex_name = "Schaffer No. 2 Function"
         self.latex_type = "Many Local Minima"
-        self.latex_cost = r'$\displaystyle f(x, y)  = ... $'
+        self.latex_cost = r"\[ f(\mathbf{x}) = 0.5 + \frac{\sin^2(x_0^2 - x_1^2) - 0.5}{[1 + 0.001(x_0^2 + x_1^2)]^2} \]"
         self.latex_desc = "The second Schaffer function has many local minima. "
 
     def cost(self, x):

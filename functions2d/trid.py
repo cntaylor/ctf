@@ -19,7 +19,7 @@ class Trid(Function2D):
         # Description
         self.latex_name = "Trid Function"
         self.latex_type = "Bowl-Shaped"
-        self.latex_cost = "\[ f(x,y) = ... \]"
+        self.latex_cost = "\[ f(\mathbf{x}) = \sum_{i=0}^{d-1} (x_i - 1)^2 - \sum_{i=1}^{d-1} x_i x_{i-1} \]"
         self.latex_desc = "The Trid function has no local minimum except the global one. It is shown here in its" \
                           "two-dimensional form. "
 

@@ -20,7 +20,7 @@ class Eggholder(Function2D):
         # Description
         self.latex_name = "Eggholder Function"
         self.latex_type = "Many Local Minima"
-        self.latex_cost = r'\[ f(x,y) = - \left(y+47\right) \sin \left(\sqrt{\left|y + \frac{x}{2}+47\right|}\right) - x \sin \left(\sqrt{\left|x - \left(y + 47 \right)\right|}\right) \]'
+        self.latex_cost = r"\[ f(\mathbf{x}) = - \left(x_1+47\right) \sin \left(\sqrt{\left|x_1 + \frac{x}{2}+47\right|}\right) - x_0 \sin \left(\sqrt{\left|x_0 - \left(x_1 + 47 \right)\right|}\right) \]"
         self.latex_desc = "The Eggholder function is a difficult function to optimize, because of the large number of local minima. "
 
     def cost(self, x):

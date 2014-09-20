@@ -19,7 +19,7 @@ class DropWave(Function2D):
         # Description
         self.latex_name = "Drop Wave Function"
         self.latex_type = "Many Local Minima"
-        self.latex_cost = r'\[ f(x, y) = ... \]'
+        self.latex_cost = r"\[ f(\mathbf{x}) = - \frac{1 + \cos(12\sqrt{x_1^2 + x_2^2})}{0.5(x_0^2 + x_1^2) + 2} \]"
         self.latex_desc = "The Drop-Wave function is multimodal and highly complex."
 
     def cost(self, x):

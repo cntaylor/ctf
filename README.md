@@ -44,7 +44,7 @@ Requires Python 3 and depends on Numpy and MatPlotLib.
 **Many Local Minima**
 
   1. [Ackley Function](/examples/functions2d/images/ackley.png)
-  1. [Bukin Function No. 6](/examples/functions2d/images/bukin.png)
+  1. [Bukin Function No. 6](/examples/functions2d/images/bukin_6.png)
   1. [Cross-in-Tray Function](/examples/functions2d/images/cross_in_tray.png)
   1. [Drop-Wave Function](/examples/functions2d/images/drop_wave.png)
   1. [Eggholder Function](/examples/functions2d/images/eggholder.png)

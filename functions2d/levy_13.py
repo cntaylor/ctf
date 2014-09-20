@@ -20,7 +20,7 @@ class Levy13(Function2D):
         # Description
         self.latex_name = "Levy No. 13 Function"
         self.latex_type = "Many Local Minima"
-        self.latex_cost = "\[ f(x,y) = ... \]"
+        self.latex_cost = r"\[ f(\mathbf{x}) = \sin^2(3 \pi x_0) + (x_0 - 1)^2 [1 + \sin^2(3 \pi x_1)] + (x_1 - 1)^2 [1 + \sin^2(2 \pi x_1)] \]"
         self.latex_desc = "description"
 
     def cost(self, x):

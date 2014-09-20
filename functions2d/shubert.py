@@ -20,7 +20,7 @@ class Shubert(Function2D):
         # Description
         self.latex_name = "Shubert Function"
         self.latex_type = "Many Local Minima"
-        self.latex_cost = "\[ f(x,y) = ... \]"
+        self.latex_cost = r"\[ f(\mathbf{x}) = \left ( \sum_{i=1}^5 i \cos((i + 1)x_0 + i) \right ) \left ( \sum_{i=1}^5 i \cos((i + 1)x_1 + i) \right ) \]"
         self.latex_desc = "The Shubert function has several local minima and many global minima."
 
     def cost(self, x):

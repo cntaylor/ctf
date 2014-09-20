@@ -20,7 +20,7 @@ class Griewank(Function2D):
         # Description
         self.latex_name = "Griewank Function"
         self.latex_type = "Many Local Minima"
-        self.latex_cost = r'\[ f(x,y) = ... \]'
+        self.latex_cost = r"\[ f(\mathbf{x}) = \sum_{i=0}^{d-1} \frac{x_i^2}{4000} - \prod^{i=0}^{d-1} \cos \left ( \frac{x_i}{\sqrt{i}} \right ) + 1 \]"
         self.latex_desc = "The Griewank function has many widespread local minima, which are regularly distributed."
 
     def cost(self, x):

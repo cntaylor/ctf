@@ -2,7 +2,7 @@
 
 # Many Local Minima
 from functions2d.ackley import Ackley
-from functions2d.bukin import Bukin
+from functions2d.bukin_6 import Bukin6
 from functions2d.cross_in_tray import CrossInTray
 from functions2d.drop_wave import DropWave
 from functions2d.eggholder import Eggholder

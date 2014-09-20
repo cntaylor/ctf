@@ -4,8 +4,8 @@ from functions2d.function2d import Function2D
 
 
 # Problem
-class Bukin(Function2D):
-    """ Bukin Function. """
+class Bukin6(Function2D):
+    """ Bukin No. 6 Function. """
 
     def __init__(self):
         """ Constructor. """
@@ -19,7 +19,7 @@ class Bukin(Function2D):
         # Description
         self.latex_name = "Bukin Function No.6"
         self.latex_type = "Many Local Minima"
-        self.latex_cost = r'\[ f(x, y) = f(x,y) = 100\sqrt{\left|y - 0.01x^{2}\right|} + 0.01 \left|x+10 \right| \]'
+        self.latex_cost = r"\[ f(\mathbf{x}) = 100\sqrt{\left|x_1 - 0.01x_0^{2}\right|} + 0.01 \left|x_0+10 \right| \]"
         self.latex_desc = "The sixth Bukin function has many local minima, all of which lie in a ridge.  "
 
     def cost(self, x):
