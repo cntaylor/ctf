@@ -109,8 +109,6 @@ Requires Python 3 and depends on Numpy and MatPlotLib.
 
   1. Ackley Function
   1. Griewank Function
-  1. Langermann Function
-  1. Levy Function
   1. Rastrigin Function
   1. Schwefel Function
 
@@ -144,8 +142,6 @@ Requires Python 3 and depends on Numpy and MatPlotLib.
 
 **Other**
 
-  1. Perm Function d, β
-  1. Powell Function
   1. Styblinski-Tang Function
 
 
