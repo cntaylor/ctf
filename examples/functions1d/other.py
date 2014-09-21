@@ -3,7 +3,7 @@ from functions1d import *
 
 minima = [Forrester]
 
-name = ["absolute"]
+name = ["forrester"]
 
 for Func, name in zip(minima, name):
     func = Func()
