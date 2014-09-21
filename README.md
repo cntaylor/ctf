@@ -25,7 +25,8 @@ class Rosenbrock(Function2D):
         # Description
         self.latex_name = "Rosenbrock Function"
         self.latex_type = "Valley Shaped"
-        self.latex_cost = r"\[ f(\boldsymbol{x}) = \sum_{i=0}^{d-2} \left[ 100 \left(x_{i+1} - x_{i}^{2}\right)^{2} + \left(x_{i} - 1\right)^{2}\right] \]"
+        self.latex_cost = r"\[ f(\boldsymbol{x}) = \sum_{i=0}^{d-2} \left[ 100 \left(x_{i+1} 
+                                - x_{i}^{2}\right)^{2} + \left(x_{i} - 1\right)^{2}\right] \]"
         self.latex_desc = "The Rosenbrock function, also referred to as the Valley or Banana function, is a popular " \
                           "test problem for gradient-based optimization algorithms. It is shown in the plot above in " \
                           "its two-dimensional form. The function is unimodal, and the global minimum lies in a " \
@@ -81,17 +82,22 @@ Requires Python 3 and depends on Numpy and MatPlotLib.
 
 **Many Local Minima**
 
-  1. Gramacy and Lee Function
+  1. [Gramacy and Lee Function](/examples/functions2d/images/gramacy_lee.png)
 
 
 **Bowl Shaped**
 
-  1. Quadratic
-  
+  1. [Quadratic](/examples/functions2d/images/quadratic.png)
+
+
+**Steep**
+
+  1. [Absolute](/examples/functions2d/images/absolute.png)
+
 
 **Other**
 
-  1. Forrester Function
+  1. [Forrester Function](/examples/functions2d/images/forrester.png)
 
 
 ### 2D Test Functions
