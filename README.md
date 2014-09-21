@@ -68,7 +68,30 @@ class Rosenbrock(Function2D):
 
 ### Code Demonstration
 
-...
+The following example shows how the module can be used.
+
+```python
+>>> import numpy as np
+>>> import matplotlib.pyplot as plt
+>>> from ctf.functions2d import Beale
+>>> func = Beale()
+>>> func.latex_desc
+The Beale function is multimodal, with sharp peaks at the corners of the input domain. 
+>>> func.domain
+[[-4.5  4.5]
+ [-4.5  4.5]]
+>>> func.cost(np.array([2.0, 0.0]))
+0.703125
+>>> func.grad(np.array([2.0, 0.0]))
+[-0.75 -2.  ]
+>>> func.hess(np.array([2.0, 0.0]))
+[[  6.  -5.]
+ [ -5.  10.]]
+>>> func.plot_cost()
+>>> plt.show()
+```
+
+![Beale Function](/examples/functions2d/images/beale.png)
 
 
 ### Requirements and Dependencies
