@@ -82,22 +82,22 @@ Requires Python 3 and depends on Numpy and MatPlotLib.
 
 **Many Local Minima**
 
-  1. [Gramacy and Lee Function](/examples/functions2d/images/gramacy_lee.png)
+  1. [Gramacy and Lee Function](/examples/functions1d/images/gramacy_lee.png)
 
 
 **Bowl Shaped**
 
-  1. [Quadratic](/examples/functions2d/images/quadratic.png)
+  1. [Quadratic](/examples/functions1d/images/quadratic.png)
 
 
 **Steep**
 
-  1. [Absolute](/examples/functions2d/images/absolute.png)
+  1. [Absolute](/examples/functions1d/images/absolute.png)
 
 
 **Other**
 
-  1. [Forrester Function](/examples/functions2d/images/forrester.png)
+  1. [Forrester Function](/examples/functions1d/images/forrester.png)
 
 
 ### 2D Test Functions
