@@ -1,4 +1,5 @@
 from examples.functions2d.utils import function_example
+from ctf.functions2d import *
 
 minima = [Bohachevsky1,
           Bohachevsky2,
