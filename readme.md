@@ -174,6 +174,8 @@ Requires Python 3 and depends on Numpy and MatPlotLib.
 
 **Steep Ridges/Drops**
 
+  1. [Absolute](/examples/functions2d/images/absolute.png)
+  1. [Absolute Skewed](/examples/functions2d/images/absolute_skewed.png)
   1. [De Jong Function No. 5](/examples/functions2d/images/de_jong_5.png)
   1. [Easom Function](/examples/functions2d/images/easom.png)
   1. [Michalewicz Function](/examples/functions2d/images/michalewicz.png)

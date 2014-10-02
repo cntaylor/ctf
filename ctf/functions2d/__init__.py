@@ -40,6 +40,8 @@ from ctf.functions2d.dixon_price import DixonPrice
 from ctf.functions2d.rosenbrock import Rosenbrock
 
 # Steep
+from ctf.functions2d.absolute import Absolute
+from ctf.functions2d.absolute_skewed import AbsoluteSkewed
 from ctf.functions2d.de_jong_5 import DeJong5
 from ctf.functions2d.easom import Easom
 from ctf.functions2d.michalewicz import Michalewicz

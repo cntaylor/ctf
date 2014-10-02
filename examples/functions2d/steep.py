@@ -1,11 +1,15 @@
 from examples.functions2d.utils import function_example
 from ctf.functions2d import *
 
-minima = [DeJong5,
+minima = [Absolute,
+          AbsoluteSkewed,
+          DeJong5,
           Easom,
           Michalewicz]
 
-name = ["de_jong_5",
+name = ["absolute",
+        "absolute_skewed",
+        "de_jong_5",
         "easom",
         "michalewicz"]
 
