@@ -17,7 +17,7 @@ class AbsoluteSkewed(Function2D):
         self.domain = np.array([[-np.inf, np.inf], [-np.inf, np.inf]])
         self.n = 2
         self.smooth = True
-        self.info = [True, False, False]
+        self.info = [True, True, True]
         # Description
         self.latex_name = "Absolute Skewed Function"
         self.latex_type = "Bowl-Shaped"
@@ -35,3 +35,25 @@ class AbsoluteSkewed(Function2D):
         c = np.abs(self.skew[0][0]*x[0] + self.skew[0][1]*x[1]) + np.abs(self.skew[1][0]*x[0] + self.skew[1][1]*x[1])
         # Return Cost
         return c
+
+    def grad(self, x):
+        """ Grad function. """
+        # Grad
+        g = np.zeros(x.shape)
+        # Calculate Grads
+        g[0] = (self.skew[0][0]*x[0] + self.skew[0][1]*x[1])/np.abs(self.skew[0][0]*x[0] + self.skew[0][1]*x[1])
+        g[1] = (self.skew[1][0]*x[0] + self.skew[1][1]*x[1])/np.abs(self.skew[1][0]*x[0] + self.skew[1][1]*x[1])
+        # Return Grad
+        return g
+
+    def hess(self, x):
+        """ Hess function. """
+        # Hess
+        h = np.zeros((2, 2) + x.shape[1:])
+        # Calculate Hess
+        h[0][0] = 0.0
+        h[0][1] = 0.0
+        h[0][1] = h[1][0]
+        h[1][1] = 0.0
+        # Return Hess
+        return h
