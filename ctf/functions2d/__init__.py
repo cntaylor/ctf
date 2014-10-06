@@ -15,7 +15,7 @@ from ctf.functions2d.schaffer_4 import Schaffer4
 from ctf.functions2d.schwefel import Schwefel
 from ctf.functions2d.shubert import Shubert
 
-# BowlShaped
+# Bowl-Shaped
 from ctf.functions2d.bohachevsky_1 import Bohachevsky1
 from ctf.functions2d.bohachevsky_2 import Bohachevsky2
 from ctf.functions2d.bohachevsky_3 import Bohachevsky3
@@ -26,14 +26,14 @@ from ctf.functions2d.sum_of_different_powers import SumOfDifferentPowers
 from ctf.functions2d.sum_squares import SumSquares
 from ctf.functions2d.trid import Trid
 
-# PlateShaped
+# Plate-Shaped
 from ctf.functions2d.booth import Booth
 from ctf.functions2d.matyas import Matyas
 from ctf.functions2d.mccormick import McCormick
 from ctf.functions2d.power_sum import PowerSum
 from ctf.functions2d.zakharov import Zakharov
 
-# ValleyShaped
+# Valley-Shaped
 from ctf.functions2d.three_hump_camel import ThreeHumpCamel
 from ctf.functions2d.six_hump_camel import SixHumpCamel
 from ctf.functions2d.dixon_price import DixonPrice
