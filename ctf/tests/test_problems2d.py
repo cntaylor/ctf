@@ -216,10 +216,10 @@ class TestGoldsteinPrice():
 #         assert check_hess(self.f)
 
 
-class TestLevi13():
+class TestLevy13():
 
     def setup(self):
-        self.f = Levi13()
+        self.f = Levy13()
 
     def teardown(self):
         pass
