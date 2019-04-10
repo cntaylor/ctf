@@ -1,29 +1,9 @@
 # Imports
 import numpy as np
+import test_funcs
 from ctf.functions2d import *
 
 
-# Support Functions
-def check_cost(f):
-    """ Checks cost is within tolerances. """
-    return (f.cost(f.min) - f.value) < 1e-4
-
-
-def check_grad(f):
-    """ Checks cost is within tolerances. """
-    return np.linalg.norm(f.grad(f.min)) < 1e-4
-
-
-def check_hess(f):
-    """ Checks Hessian is positive semi-definite. """
-    #try:
-    #    np.linalg.cholesky(f.hess(f.min))
-    #except:
-    #    return False
-    #else:
-    #    return True
-    return np.all(np.linalg.eigvals(f.hess(f.min)) >= 0.0)
-    #return True
 
 
 # Test Functions

@@ -2,7 +2,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-
 #
 class Function2D():
     """ Two Dimensional problem class. """

@@ -13,7 +13,7 @@ class Trid(Function2D):
         """ Constructor. """
         # Information
         self.min = np.array([2.0, 2.0])
-        self.value = 0.0
+        self.value = -2.0
         self.domain = np.array([[-4, 4], [-4, 4]])
         self.n = 2
         self.smooth = True

@@ -19,7 +19,7 @@ class Perm(Function2D):
         self.domain = np.array([[-2, 2] for i in range(0, n)])
         self.n = n
         self.smooth = True
-        self.info = [True, False, False]
+        self.info = [True, True, True]
         # Description
         self.latex_name = "Perm Function"
         self.latex_type = "Bowl-Shaped"
@@ -34,3 +34,39 @@ class Perm(Function2D):
         c = np.sum([np.sum([(j + 1 + self.beta)*(x[j]**i - 1/((j+1)**i)) for j in range(0, self.n)], axis=0)**2 for i in range(1, self.n+1)], axis=0)
         # Return Cost
         return c
+
+    def grad(self, x):
+        g = np.zeros(x.shape)
+        inside_sum = np.zeros(x.shape)
+        n = self.n
+        #First, compute the sum for each i
+        for i in range(n):
+            for j in range(n):
+                inside_sum[i] += (j+1.0+self.beta) * (x[j]**(i+1.0) - 1./((j+1.)**(i+1.0)))
+        for j in range(n):
+            for k in range(n):
+                g[j] += inside_sum[k]*(j+1.0+self.beta)*((k+1.)*x[j]**k)
+        g = g * 2.0
+        return g
+
+    def hess(self, x):
+        n = self.n
+        h = np.zeros((n,n))
+        inside_sum = np.zeros(x.shape)
+        for i in range(n):
+            for j in range(n):
+                inside_sum[i] += (j+1.0+self.beta) * (x[j]**(i+1.0) - 1./((j+1.)**(i+1.0)))
+
+        for i in range(n):
+            for j in range(n):
+                if i==j:
+                    h[i,i] = (j+1.0+self.beta)**2.
+                    for k in range(1,n):
+                        h[i,i] += (j+1.0+self.beta) * \
+                            (inside_sum[k] * ((k+1.)*k*x[j]**(k-1)) + 
+                            (k+1.*x[j]**k) * (j+1.0+self.beta) * (k+1.)*x[j]**k )
+                else:
+                    for k in range(n):
+                        h[i,j] += (i+1.0+self.beta)*((k+1.)*x[i]**k) * \
+                            (j+1.0+self.beta)*(k+1.)*x[j]**k
+        return h

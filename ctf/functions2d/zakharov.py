@@ -31,6 +31,6 @@ class Zakharov(Function2D):
         # Calculate Cost
         c = np.sum([x[i]**2 for i in range(0, 2)], axis=0) + \
             np.sum([0.5*(i+1)*x[i] for i in range(0, 2)], axis=0)**2 + \
-            np.sum([0.5*(i+1*x[i]) for i in range(0, 2)], axis=0)**4
+            np.sum([0.5*(i+1)*x[i] for i in range(0, 2)], axis=0)**4
         # Return Cost
         return c
